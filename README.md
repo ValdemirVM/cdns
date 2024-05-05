@@ -10,7 +10,7 @@ Este projeto é licenciado sob a Creative Commons Attribution 4.0 International 
 ### Inclua o JavaScript:
 Adicione o seguinte trecho de código dentro da tag <head> de suas páginas HTML:
 ```html
-<script src="https://seu-cdn.com/captcha.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ValdemirVM/cdns@main/captchabootstrap.js"></script>
 ```
 
 ## Adicione o Markup:
