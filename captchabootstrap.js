@@ -22,7 +22,7 @@ function criarCaptcha() {
     
     // Criar o HTML do CAPTCHA dinâmico com botões Bootstrap 5
     var captchaHTML = `
-        <p>${num1} + ${num2} = ?</p>
+        <small>${num1} + ${num2} = ?</small>
         <div class="btn-group" role="group" aria-label="Opções" style="width:180px;">
             <button type="button" class="btn btn-outline-dark btn-option me-1" data-valor="${resultado - 1}">${resultado - 1}</button>
             <button type="button" class="btn btn-outline-dark btn-option me-1" data-valor="${resultado}">${resultado}</button>
