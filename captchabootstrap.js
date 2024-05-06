@@ -1,3 +1,7 @@
+/**
+ * CAPTCHA BOOTSTRAP
+ * Author: Valdemir V Mendes
+ */
 // CSS para o CAPTCHA
 var captchaCSS = `
 <style>
