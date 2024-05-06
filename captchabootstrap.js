@@ -54,7 +54,7 @@ function criarCaptcha() {
             <button type="button" class="btn btn-outline-secondary btn-option me-1" data-valor="${opcoes[1]}">${opcoes[1]}</button>
             <button type="button" class="btn btn-outline-secondary btn-option me-1" data-valor="${opcoes[2]}">${opcoes[2]}</button>
         </div>
-        <small id="resultado" class="mt-2"><i class="fa-solid fa-user-shield text-secondary"></i></small>
+        <small id="resultado" class="mt-2"><i class="fa-solid fa-lock"></i></small>
     `;
         
     document.getElementById("captchavgmj").classList.add('border');
