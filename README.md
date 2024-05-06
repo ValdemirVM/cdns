@@ -33,14 +33,14 @@ O CAPTCHA apresentará uma operação matemática que o usuário deve resolver s
 ### Feedback de Resposta:
 Após selecionar uma opção, o CAPTCHA fornecerá um feedback imediato ao usuário, indicando se a resposta está correta ou incorreta.
 ### Armazenando a Resposta:
-O CAPTCHA inclui um campo <input type="hidden" id="captchavgmj" name="captchavgmj" value=""> para armazenar automaticamente a resposta do usuário (1 para correta, 0 para incorreta). Este valor pode ser enviado ao servidor junto com outros dados do formulário.
+O CAPTCHA inclui um campo <input type="hidden" id="captchapost" name="captchapost" value=""> para armazenar automaticamente a resposta do usuário (1 para correta, 0 para incorreta). Este valor pode ser enviado ao servidor junto com outros dados do formulário.
 
 ### Por exemplo, em PHP:
 ```php
 <?php
 // Verifica se o formulário foi enviado e se o CAPTCHA foi respondido corretamente
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $respostaCorreta = $_POST["captchavgmj"]; // Valor do campo hidden com a resposta correta
+    $respostaCorreta = $_POST["captchapost"]; // Valor do campo hidden com a resposta correta
 
     // Verifica se a resposta enviada é igual à resposta correta
     if ($respostaCorreta == "1") {
